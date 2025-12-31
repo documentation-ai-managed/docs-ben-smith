@@ -1,0 +1,98 @@
+---
+title: Introduction to Ben Smith
+description: Discover Ben Smith, your default documentation space for organizing and managing project documentation with ease.
+---
+
+## Overview
+
+Ben Smith provides a centralized platform where you create, organize, and manage all your project documentation. You build structured knowledge bases with Markdown support, version history, and search capabilities. Start documenting your projects immediately without complex setups.
+
+<Callout kind="info">
+  Ben Smith handles everything from API references to user guides in one space.
+</Callout>
+
+## Key Features
+
+Ben Smith offers powerful tools to streamline your documentation workflow.
+
+<Columns cols={3}>
+  <Card title="Structured Organization" icon="folder-tree" href="#organization">
+    Create nested pages, tags, and categories to keep your docs intuitive and searchable.
+  </Card>
+  <Card title="Markdown & MDX Support" icon="edit-3" href="#markdown">
+    Write rich content with components, code blocks, and diagrams directly in MDX.
+  </Card>
+  <Card title="Collaboration" icon="users" href="#collaboration">
+    Invite team members, track changes, and review edits in real-time.
+  </Card>
+</Columns>
+
+## Quick Navigation Guide
+
+Get up and running with these essential steps.
+
+<Steps>
+  <Step title="Create Your Space" icon="plus">
+    Sign up at `https://bensmith.com` and create a new documentation space for your project.
+  </Step>
+  <Step title="Add Your First Page" icon="file-plus">
+    Click "New Page" and start writing in the Markdown editor.
+  </Step>
+  <Step title="Organize Content" icon="layers">
+    Use the sidebar to nest pages and add navigation menus.
+  </Step>
+  <Step title="Publish and Share" icon="globe">
+    Deploy your site and share the live URL with your team.
+  </Step>
+</Steps>
+
+## Use Cases
+
+Ben Smith adapts to various documentation needs.
+
+<Tabs>
+  <Tab title="Software Projects" icon="code">
+    Document APIs, SDKs, and changelogs. Embed code examples like this:
+
+    <CodeGroup tabs="JavaScript,Python">
+    ```javascript
+    const client = new BenSmithClient({ apiKey: `YOUR_API_KEY` });
+    const docs = await client.getPages({ spaceId: `your-space-id` });
+    console.log(docs);
+    ```
+    ```python
+    from bensmith import Client
+    client = Client(api_key="YOUR_API_KEY")
+    docs = client.get_pages(space_id="your-space-id")
+    print(docs)
+    ```
+    </CodeGroup>
+  </Tab>
+  <Tab title="Internal Wikis" icon="book-open">
+    Build company handbooks with search and permissions for restricted access.
+  </Tab>
+  <Tab title="Product Guides" icon="help-circle">
+    Create user manuals with steps, videos, and interactive examples.
+  </Tab>
+</Tabs>
+
+## Next Steps
+
+Explore more to unlock Ben Smith's full potential.
+
+<Columns cols={2}>
+  <Card title="Quickstart" icon="zap" href="/quickstart">
+    Set up your first project in under 5 minutes.
+  </Card>
+  <Card title="Authentication" icon="shield" href="/authentication">
+    Secure your docs with API keys and OAuth.
+  </Card>
+</Columns>
+
+<Expandable title="Advanced Customization" default-open="false">
+  Customize themes with your brand color `#3B82F6` and add custom domains.
+</Expandable>
+
+<Callout kind="tip">
+  Check the [changelog](/changelog) for the latest updates and features.
+</Callout>

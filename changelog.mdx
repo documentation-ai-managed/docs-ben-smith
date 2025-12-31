@@ -1,0 +1,132 @@
+---
+title: Changelog
+description: Stay updated with the latest releases, features, and improvements in Ben Smith.
+---
+
+## Recent Releases
+
+Stay current with Ben Smith by reviewing the latest updates. You receive new features, performance improvements, and bug fixes regularly. Use the version history below to track changes and plan upgrades.
+
+<Callout kind="info">
+  Subscribe to the RSS feed at `/changelog.xml` or follow `@bensmith` on social platforms for instant notifications.
+</Callout>
+
+## Version History
+
+<Update label="2024-10-15" description="v1.2.0" tags={["feature", "improvement"]}>
+
+## New Features
+
+- Added support for custom brand colors in documentation themes
+- Introduced `<Video>` and `<Iframe>` components for richer media embeds
+- Enabled Mermaid diagram rendering with enhanced parsing safety
+
+## Improvements
+
+- Optimized MDX parsing speed by `>30%`
+- Enhanced accessibility with better alt text requirements on `<Image>` components
+
+## Bug Fixes
+
+- Fixed nested code block rendering issues in `<Tabs>` and `<Steps>`
+- Resolved attribute parsing errors for arrays like `tags={["feature"]}`
+
+</Update>
+
+<Update label="2024-09-20" description="v1.1.0" tags={["feature", "bugfix"]}>
+
+## New Features
+
+- New `<Columns>` component for responsive grid layouts
+- Added `<ParamField>` and `<ResponseField>` for API documentation
+- Support for Lucide icons in all components (e.g., `icon="zap"`)
+
+## Bug Fixes
+
+- Corrected frontmatter YAML parsing with strict no-blank-line validation
+- Fixed special character escaping for `{`, `}`, `<`, `>` in prose
+
+</Update>
+
+<Update label="2024-08-10" description="v1.0.0" tags={["breaking", "feature"]}>
+
+## New Features
+
+- Initial release of MDX Writer Agent with core components like `<Callout>`, `<Steps>`, `<Tabs>`
+- Full support for JSX syntax in documentation pages
+- Integrated parsing rules for error-free MDX output
+
+## Breaking Changes
+
+- Removed legacy H1 heading support; all pages now require YAML frontmatter titles
+- Updated attribute syntax to require double quotes: `title="Text"`
+
+## Migration Guide
+
+Update your pages to use H2 as the first heading and escape special characters like `{variable}`.
+
+</Update>
+
+## Upgrading Ben Smith
+
+Follow these steps to upgrade to the latest version.
+
+<Steps>
+  <Step title="Backup Your Docs" icon="database">
+
+    Create a backup of your `docs/` directory.
+
+    ```
+    cp -r docs docs-backup
+    ```
+
+  </Step>
+  <Step title="Install Latest" icon="download">
+
+    <CodeGroup tabs="npm,yarn">
+
+    ````bash
+    npm install bensmith@latest
+    ````
+
+    ````bash
+    yarn add bensmith@latest
+    ````
+
+    </CodeGroup>
+
+  </Step>
+  <Step title="Rebuild Site" icon="refresh-cw">
+
+    Run the build command.
+
+    ```
+    npm run build
+    ```
+
+  </Step>
+  <Step title="Deploy Changes" icon="upload-cloud">
+
+    Push to your hosting provider.
+
+  </Step>
+</Steps>
+
+<Columns cols={2}>
+  <Card title="Quickstart" icon="book-open" href="/quickstart">
+    Get started with the new features.
+  </Card>
+  <Card title="Migration Guide" icon="help-circle" href="/migration">
+    Detailed steps for v1.0 to v1.2.
+  </Card>
+  <Card title="API Reference" icon="code" href="/api">
+    Updated endpoints and parameters.
+  </Card>
+  <Card title="Community" icon="users" href="https://github.com/bensmith/docs" target="_blank">
+    Report issues or contribute.
+  </Card>
+</Columns>
+
+<Callout kind="tip">
+  Check the tags on each release: `feature` for new capabilities, `bugfix` for stability, `breaking` for required updates.
+</Callout>
